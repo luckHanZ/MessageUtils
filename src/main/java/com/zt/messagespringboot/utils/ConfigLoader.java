@@ -27,7 +27,7 @@ public class ConfigLoader {
     public static AppConfig createMessageConfig() {
         //多态  父类类型指向子类对象
         AppConfig config = new MessageConfig();
-
+//这是你自己的
         config.setAppId("30402");
         config.setAppKey("9f4111f58a39393eb2df9fe8503fbeba");
         //提示消息
