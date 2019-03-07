@@ -30,7 +30,7 @@ public class DataStore extends TreeMap<String, Object> {
 	/**
 	 * 定义一个拼接模式，将数据被添加到map里。
 	 * 列如
-	 * <code> 
+	 * <code>
 	 * addWithComma("K", "v1");
 	 * addWithComma("K", "v2");
 	 * </code>
