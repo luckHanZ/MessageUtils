@@ -35,6 +35,7 @@ public class MessageController {
     @RequestMapping("senMessage")
     public ResultJson senMessage(String mobile) {
         logger.info("发送短信");
+        System.out.println("ran = " );
         if (StringUtils.isBlank(mobile)) {
             return ResultJson.errorCodeMsg(0, "手机号不可以为空");
         }
@@ -45,5 +46,6 @@ public class MessageController {
         //发送短信验证码
         SmsUtils.sendVerificationCodeMsg(Integer.toString(ran), mobile);
         return ResultJson.build(1, "短信验证码发送成功", String.valueOf(ran));
+
     }
 }
