@@ -34,17 +34,10 @@ public class MessageController {
  **/
     @RequestMapping("senMessage")
     public ResultJson senMessage(String mobile) {
-        logger.info("发送短信");
-        System.out.println();
-        System.out.println();
-        System.out.println();System.out.println();
-        System.out.println();
-
-
-        System.out.println("ran = " );
         if (StringUtils.isBlank(mobile)) {
             return ResultJson.errorCodeMsg(0, "手机号不可以为空");
         }
+        System.out.println("ssdsdasdasdsa");
         //生成4位随机数
         Random random = new Random();
         int ran = random.nextInt(9001) + 1000;
