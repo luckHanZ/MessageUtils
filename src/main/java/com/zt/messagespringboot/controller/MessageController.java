@@ -34,13 +34,8 @@ public class MessageController {
  **/
     @RequestMapping("senMessage")
     public ResultJson senMessage(String mobile) {
+        System.out.println("sasssss");
         logger.info("发送短信");
-        System.out.println();
-        System.out.println();
-        System.out.println();System.out.println();
-        System.out.println();
-
-
         System.out.println("ran = " );
         if (StringUtils.isBlank(mobile)) {
             return ResultJson.errorCodeMsg(0, "手机号不可以为空");
